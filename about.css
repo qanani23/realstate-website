@@ -1,0 +1,163 @@
+
+.hero-section {
+    width: 100%;
+    height: 400px;
+    background-image: url("mainpage images/10.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-section .navbar {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+
+
+
+
+
+.about-container {
+    max-width: 1200px;
+    margin: -100px auto 50px;
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text-in-container {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: rgba(26, 115, 232, 0.08);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-text-in-container h1 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin: 0 0 0.5rem 0;
+}
+
+.hero-text-in-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+
+.about-section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+    color: #1a73e8;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background: #1a73e8;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.offer-box {
+    background: #eef4ff;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border-left: 5px solid #1a73e8;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.team-stats {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.team-stats h1 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-box {
+    background: #acc6f8;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 5px solid #276cc1;
+}
+
+.stat-box h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #1a73e8;
+}
+
+.stat-box p {
+    margin: 0.5rem 0 0;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+    .about-container {
+        margin-top: -150px;
+        padding: 1.5rem;
+    }
+
+    .hero-text-in-container h1 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .team-stats h1 {
+        font-size: 2rem;
+    }
+
+    .stat-box h3 {
+        font-size: 2rem;
+    }
+}

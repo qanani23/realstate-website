@@ -1,0 +1,132 @@
+
+
+body {
+    background: #efeded;
+}
+
+
+.header-img {
+    width: 100%;
+    height: 400px;
+    background-image: url('mainpage images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-img .navbar {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    width: 100%;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: -80px auto 50px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.container h2 {
+    color: #2475b4;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.property {
+    display: flex;
+    gap: 1.5rem;
+    background: #f9f9f9;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    flex-wrap: wrap;
+}
+
+.property:hover {
+    border-color: #1a73e8;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.property img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.property-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2475b4;
+    margin: 0 0 1rem 0;
+}
+
+.property-details p {
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.property-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #1a73e8;
+}
+
+.property-details button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.property-details button:hover {
+    background-color: #0c3f82;
+}
+
+
+@media (max-width: 768px) {
+    .property {
+        flex-direction: column;
+    }
+
+    .property img {
+        max-width: 100%;
+    }
+
+    .property-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}

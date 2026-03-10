@@ -1,0 +1,113 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.login-background {
+    background-image: url('images/19.jpg');
+}
+
+.signup-background {
+    background-image: url('images/14.jpg');
+}
+
+.auth-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.auth-container button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #000;
+}
+
+.message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.switch-auth {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.switch-auth a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-auth a:hover {
+    text-decoration: underline;
+}
