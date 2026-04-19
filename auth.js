@@ -17,7 +17,7 @@ if (loginForm) {
             }, 1000);
         } else {
             errorMsg.style.color = "red";
-            errorMsg.innerText = "Invalid email or password!";
+            errorMsg.innerText = "Invalid email or password! please try again ";
         }
     });
 }
