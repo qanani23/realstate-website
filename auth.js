@@ -42,7 +42,7 @@ if (signupForm) {
         const users = JSON.parse(localStorage.getItem("users")) || [];
 
         if (users.some(u => u.email === email)) {
-            message.innerText = "Email already registered!";
+            message.innerText = "Email already registered! you were already in so try with you old email";
             message.classList.remove("success");
             return;
         }
